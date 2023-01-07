@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">`
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                crossorigin="anonymous">
+
+        <title>Scientific Calci</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+                integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+                integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="/main.css">
+        <script src="/index.js"></script>
+</head>
+
+<body>
+        <header class="header">
+                <h1>Scientific calci</h1>
+        </header>
+
+        <div class="container-fluid">
+                <div class="row box justify-content-around">
+                        <div class="col-md-4 butbox" style="background-color:rgb(175, 179, 177); padding: 0;">
+                                <table>
+                                        <tr>
+                                                <td colspan="6" class="header">Calculater</td>
+                                        </tr>
+                                        <tr>
+                                                <td colspan="6"><input type="text" id="result" class="display"></td>
+                                        </tr>
+                                        <tr>
+                                                <td><input type="button" class="calbutton" onclick="dis('7')"
+                                                                onkeydown="myFunction(event)" value="7"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('8')"
+                                                                onkeydown="myFunction(event)" value="8"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('9')"
+                                                                onkeydown="myFunction(event)" value="9"></td>
+                                                <td><input type="button" class="calbutton" value="c" onclick="clr()" />
+                                                </td>
+                                                <td><input type="button" class="calbutton" onclick="back()"
+                                                                value="&#8592;"></td>
+
+
+                                        </tr>
+                                        <tr>
+                                                <td><input type="button" class="calbutton" onclick="dis('4')"
+                                                                onkeydown="myFunction(event)" value="4"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('5')"
+                                                                onkeydown="myFunction(event)" value="5"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('6')"
+                                                                onkeydown="myFunction(event)" value="6"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('/')"
+                                                                onkeydown="myFunction(event)" value="/"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('*')"
+                                                                onkeydown="myFunction(event)" value="*"></td>
+
+                                        </tr>
+                                        <tr>
+                                                <td><input type="button" class="calbutton" onclick="dis('1')"
+                                                                onkeydown="myFunction(event)" value="1"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('2')"
+                                                                onkeydown="myFunction(event)" value="2"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('3')"
+                                                                onkeydown="myFunction(event)" value="3"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('+')"
+                                                                onkeydown="myFunction(event)" value="+"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('-')"
+                                                                onkeydown="myFunction(event)" value="-"></td>
+                                        </tr>
+                                        <tr>
+                                                <td colspan="2"><input type="button" class="calbutton"
+                                                                onclick="dis('0')" onkeydown="myFunction(event)"
+                                                                class="calbutton" value="0"></td>
+                                                <td><input type="button" class="calbutton" onclick="dis('.')"
+                                                                onkeydown="myFunction(event)" class="calbutton"
+                                                                value="."></td>
+                                                <td colspan="2"><input type="button" class="calbutton" value="="
+                                                                onclick="solve()"> </td>
+                                                <!-- <td colspan="2"><input type="button" class="calbutton" onclick="dis('=')"
+                                onkeydown="myFunction(event)" class="calbutton" value="="></td> -->
+                                        </tr>
+
+                                </table>
+                        </div>
+
+                </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
